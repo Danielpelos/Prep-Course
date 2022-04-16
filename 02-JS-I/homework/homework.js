@@ -4,19 +4,19 @@
 const nuevaString = 'Alkolirikoz';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 45;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 0;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -27,7 +27,9 @@ const nuevoModulo = 21 % 5 === null;
 
 function devolverString(str) {
   // "Return" la string provista: str
-  // Tu código:
+  // Tu código: 
+  var str = 'Hola';
+  return str;
   
 }
 
@@ -35,45 +37,70 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  var suma = x + y;
+  return suma;
+
   
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
+  var resta = x - y;
+  return resta;
   
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
+  var multiplicacion = x * y;
+  return multiplicacion;
   
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  
+  var dividir = x/y;
+  return dividir
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  // var sonIguales = x == y;
+  var a;
+  if (x == y) {
+    a = true;
+  }else{
+    a = false;
+  }
+  return a;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1.length == str2.length){
+    return true;
+  }else{
+    return false;
+  }
+   
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num < 90){
+  return true;
+  }else{
+  return false; 
+  }  
   
 }
 
@@ -81,12 +108,19 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num > 50){
+    return true;
+    }else{
+    return false; 
+    }  
+    
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  var dividiendo = x % y;
+  return dividiendo;
   
 }
 
@@ -94,21 +128,29 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % 2 == 0){
+    return true;
+    }else{
+    return false; 
+    }  
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % 2 == 0){
+    return false;
+    }else{
+    return true; 
+    }  
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+  return Math.pow (num, 2);
 }
 
 function elevarAlCubo(num) {
@@ -247,3 +289,13 @@ module.exports = {
   deEuroAdolar,
   esVocal,
 };
+//console.log("la suma de esta mierda es ", suma(2, 5));
+//console.log(sonIguales(8, 8));
+//console.log(tienenMismaLongitud("bicho", "bicho"));
+//console.log(menosQueNoventa(234));
+//console.log(mayorQueCincuenta(51));
+//console.log(obtenerResto(31, 6));
+//console.log(esPar(6));
+//console.log(esImpar(3));
+console.log(elevarAlCuadrado(6))
+

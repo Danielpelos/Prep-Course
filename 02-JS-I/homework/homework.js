@@ -150,36 +150,44 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Math.pow (num, 2);
+  return Math.pow (x, y);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  return Math.pow (num, 3);
   
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  var resultado;
+  resultado = Math.pow (num, exponent);
+  return resultado;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+var Resultado;
+Resultado = Math.round(num);
+return Resultado;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  var _Resultado;
+  _Resultado = Math.ceil(num);
+  return _Resultado;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  return Math.random(0,1);
   
 }
 
@@ -297,5 +305,8 @@ module.exports = {
 //console.log(obtenerResto(31, 6));
 //console.log(esPar(6));
 //console.log(esImpar(3));
-console.log(elevarAlCuadrado(6))
-
+//console.log(elevarAlCuadrado(6));
+//console.log(elevar(3, 3));
+//console.log(redondearNumero(3.4));
+//console.log(redondearHaciaArriba(3.1));
+//console.log(numeroRandom());

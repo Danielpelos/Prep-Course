@@ -196,19 +196,29 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if (numero === 0){
+  return false;
+}else if (numero > 0){
+  console.log("Es Positivo ");
+}else {
+  console.log("Es Negativo");
+}
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  str += "!";
+  console.log(str);
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  str = nombre + ' ' + apellido;
+  console.log(str);
   
 }
 
@@ -216,26 +226,31 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
-}
+  var pon = "Hola";
+  console.log(pon + ' ' + nombre);
+  }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  var resultado = alto * ancho;
+  return resultado;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var resultadoperi = lado * 4;
+  return resultadoperi;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  var areatri = base * altura / 2;
+  return areatri;
 
 }
 
@@ -244,7 +259,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+var dolar = euro * 1.20; 
+  return dolar;
 }
 
 
@@ -254,6 +270,18 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+ var a = 1;
+ var e = 2;
+ var i = 3;
+ var o = 4;
+ var u = 5;
+  if(letra.length > 1 ){
+    console.log("Dato Incorrecto");
+  }else if (letra = 1, 2, 3, 4, 5){
+    console.log( "Es vocal");
+  }else{
+    console.log("Dato Incorrecto otra vez");
+  }
   
 }
 
@@ -310,3 +338,11 @@ module.exports = {
 //console.log(redondearNumero(3.4));
 //console.log(redondearHaciaArriba(3.1));
 //console.log(numeroRandom());
+//esPositivo(7);
+//console.log(esPositivo(0));
+//agregarSimboloExclamacion("wegfuyuesillo");
+//combinarNombres("Hola", "Queso");
+//obtenerSaludo("Queso");
+//console.log(obtenerAreaRectangulo(5, 8));
+//console.log(deEuroAdolar(5));
+esVocal("g");

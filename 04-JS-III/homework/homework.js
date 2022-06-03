@@ -3,18 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  var arreglo = [1, 2, 3, 4, 5] 
+  console.log(arreglo[0]);
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var arreglo = [1, 2, 3, 4, 5] 
+  console.log(arreglo[4]);
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  var arreglo = [1, 2, 3, 4, 5, 6, 7] 
+  console.log(arreglo.length);
 }
 
 
@@ -23,6 +29,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var arreglo = [1, 2, 3, 4, ];
+  arreglo.push(5);
+  console.log(arreglo);
 }
 
 
@@ -30,6 +39,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  var arreglo = [1, 2, 3, 4, ];
+  arreglo[4] = (7);
+  console.log(arreglo);
 }
 
 
@@ -38,6 +50,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  var arreglo = [1, 2, 3, 4, ];
+  arreglo[0] = (7);
+  console.log(arreglo);
 }
 
 
@@ -47,13 +62,21 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-}
+  var palabras = ['Hello', 'word'];
+   return palabras.join(" ");
+ } 
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
-  // Tu código:
+  // Tu código:}
+  var array = [1, 2, 3, 4, ]
+  if (array.length > 3) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -178,3 +201,12 @@ module.exports = {
   breakStatement,
   continueStatement
 };
+
+/*console.log(devolverPrimerElemento());
+console.log(devolverUltimoElemento());
+console.log(obtenerLargoDelArray());
+console.log(incrementarPorUno());
+console.log(agregarItemAlFinalDelArray());
+console.log(agregarItemAlComienzoDelArray());
+console.log(dePalabrasAFrase());*/
+console.log(arrayContiene())
